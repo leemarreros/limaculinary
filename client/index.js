@@ -12,13 +12,11 @@ class LimaCulinary extends React.Component{
   }
   render() {
     return (
-      <div>
+      <div className='headerWrap'>
         <Header/>
-        <div>Test</div>
       </div>
       );
   }
 };
-
 
 ReactDOM.render(<LimaCulinary/>, document.getElementById('react'));

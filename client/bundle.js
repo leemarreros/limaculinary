@@ -30,11 +30,26 @@ var Header = (function (_React$Component) {
     value: function render() {
       return _react2['default'].createElement(
         'div',
-        { className: 'header' },
+        { className: 'headerE' },
         _react2['default'].createElement(
-          'h1',
+          'span',
           null,
-          'LIMA CULINARY'
+          _react2['default'].createElement(
+            'h1',
+            null,
+            'LIMA CULINARY'
+          )
+        ),
+        _react2['default'].createElement(
+          'div',
+          { className: 'imgWrapper' },
+          _react2['default'].createElement('img', { src: '../img/arrozConMariscos.png' }),
+          _react2['default'].createElement('img', { src: '../img/causaRellena.png' }),
+          _react2['default'].createElement('img', { src: '../img/cevicheModerno.png' }),
+          _react2['default'].createElement('img', { src: '../img/chichaMorada.png' }),
+          _react2['default'].createElement('img', { src: '../img/pachamanca.png' }),
+          _react2['default'].createElement('img', { src: '../img/picarones.png' }),
+          _react2['default'].createElement('img', { src: '../img/pollo-a-la-brasa.png' })
         )
       );
     }
@@ -87,13 +102,8 @@ var LimaCulinary = (function (_React$Component) {
     value: function render() {
       return _react2['default'].createElement(
         'div',
-        null,
-        _react2['default'].createElement(_componentsHeader2['default'], null),
-        _react2['default'].createElement(
-          'div',
-          null,
-          'Test'
-        )
+        { className: 'headerWrap' },
+        _react2['default'].createElement(_componentsHeader2['default'], null)
       );
     }
   }]);

@@ -10,8 +10,17 @@ class Header extends React.Component{
   }
   render() {
     return (
-      <div className="header">
-        <h1>LIMA CULINARY</h1>
+      <div className='headerE'>
+        <span><h1>LIMA CULINARY</h1></span>
+        <div className='imgWrapper'>
+          <img src='../img/arrozConMariscos.png'/>
+          <img src='../img/causaRellena.png'/>
+          <img src='../img/cevicheModerno.png'/>
+          <img src='../img/chichaMorada.png'/>
+          <img src='../img/pachamanca.png'/>
+          <img src='../img/picarones.png'/>
+          <img src='../img/pollo-a-la-brasa.png'/>
+        </div>
       </div>
       );
   }

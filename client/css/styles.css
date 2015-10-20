@@ -1,0 +1,41 @@
+.headerWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.headerE {
+  width: 100%;
+  max-width: 1244px;
+  height: 102px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+.imgWrapper {
+  flex: 5.5;
+  display: flex;
+  justify-content: space-around;
+}
+
+.headerE span {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerE span h1 {
+  text-align: center;
+  align-self:center;
+  font-size: 50px;
+  color: #F20024;
+  font-family: 'Lato-bold', sans-serif;
+}
+
+.imgWrapper > img {
+  flex: 0 0 88px;
+  height: 88px;
+}
