@@ -30,11 +30,11 @@ var Header = (function (_React$Component) {
     value: function render() {
       return _react2['default'].createElement(
         'div',
-        null,
+        { className: 'header' },
         _react2['default'].createElement(
           'h1',
           null,
-          'Header'
+          'LIMA CULINARY'
         )
       );
     }
