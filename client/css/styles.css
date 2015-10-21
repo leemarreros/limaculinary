@@ -1,8 +1,26 @@
-.headerWrap {
+.globalWrapper {
   display: flex;
+  flex-direction: column;
+  /*justify-content:center;*/
+  /*flex-wrap:wrap;*/
+  height: 100vh;
+  justify-content: space-between;
+
+}
+
+.headerWrap  {
+  display: flex;
+  flex:0 0 auto;
   justify-content: center;
 }
 
+.backgroundWrap {
+  display: flex;
+  flex:0 0 100%;
+  justify-content: center;
+}
+
+/*HEADER STYLING*/
 .headerE {
   width: 100%;
   max-width: 1244px;
@@ -21,7 +39,7 @@
 }
 
 .headerE span {
-  flex: 3;
+  flex: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,3 +57,29 @@
   flex: 0 0 88px;
   height: 88px;
 }
+/*END HEADER STYLING*/
+/*------------------------------------------*/
+
+/*BACKGROUNDTOP STYLING*/
+.backgroundWrap {
+  /*max-height: 653px;*/
+  /*height:100%;*/
+  background-color: yellow;
+  border: 1px solid red;
+}
+
+.backgroundTopImage {
+  justify-content: center;
+  display:flex;
+  text-align: center;
+  background: url(../img/cathedral-lima-peru.png) center no-repeat;
+  flex:1 1 1244px;
+}
+
+
+.backgroundTopImage h1 {
+
+}
+
+/*END BACKGROUND TOP STYLING*/
+/*------------------------------------------*/
