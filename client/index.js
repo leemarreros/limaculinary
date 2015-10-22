@@ -3,6 +3,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/header';
+import BackgroundTop from './components/backgroundTop';
 
 class LimaCulinary extends React.Component{
   constructor(props) {
@@ -12,13 +13,16 @@ class LimaCulinary extends React.Component{
   }
   render() {
     return (
-      <div>
-        <Header/>
-        <div>Test</div>
+      <div className='globalWrapper'>
+        <div className='headerWrap'>
+          <Header/>
+        </div>
+        <div className='backgroundWrap'>
+          <BackgroundTop/>
+        </div>
       </div>
       );
   }
 };
-
 
 ReactDOM.render(<LimaCulinary/>, document.getElementById('react'));
