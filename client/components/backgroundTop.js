@@ -11,7 +11,7 @@ class backgroundTop extends React.Component{
   render() {
     return (
       <div className='backgroundTopImage'>
-        <h1 className='backDescription'>IMAGINE THAT YOU<br/> COULD MAKE THE BEST<br/><span className='limaColor'>LIMA’S </span> FOOD IN YOUR<br/> KITCHEN</h1>
+        <h1 className='backDescription'>IMAGINE THAT YOU COULD MAKE THE BEST<span className='limaColor'> LIMA’S </span> FOOD IN YOUR KITCHEN</h1>
       </div>
       );
   }

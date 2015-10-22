@@ -4,6 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/header';
 import BackgroundTop from './components/backgroundTop';
+import DescriptionBody from './components/descriptionBody';
 
 class LimaCulinary extends React.Component{
   constructor(props) {
@@ -19,6 +20,9 @@ class LimaCulinary extends React.Component{
         </div>
         <div className='backgroundWrap'>
           <BackgroundTop/>
+        </div>
+        <div className='descriptionWrap'>
+          <DescriptionBody/>
         </div>
       </div>
       );
