@@ -1,84 +1,137 @@
+/*TOP WRAPPERS*/
 .globalWrapper {
   display: flex;
   flex-direction: column;
-  /*justify-content:center;*/
-  /*flex-wrap:wrap;*/
-  height: 100vh;
-  justify-content: space-between;
+  align-items:center;
 
 }
 
 .headerWrap  {
   display: flex;
-  flex:0 0 auto;
+  max-width: 1246px;
+  width: 100%;
   justify-content: center;
 }
 
 .backgroundWrap {
-  display: flex;
-  flex:0 0 100%;
-  justify-content: center;
+  max-width: 1246px;
+  width: 100%;
+  background-color: yellow;
+  border: 1px solid red;
 }
+
+/*END TOP WRAPPERS*/
+/*------------------------------------------*/
 
 /*HEADER STYLING*/
 .headerE {
+  display: flex;
   width: 100%;
   max-width: 1244px;
-  height: 102px;
-  display: flex;
-  justify-content: center;
+  height: 110px;
+  justify-content: space-between;
   align-items:center;
-  flex-direction: row;
   border: 1px solid black;
 }
 
 .imgWrapper {
-  flex: 5.5;
+  flex: 2 3;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .headerE span {
-  flex: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex: 1 1;
 }
 
 .headerE span h1 {
-  text-align: center;
-  align-self:center;
+  text-align:center;
   font-size: 50px;
   color: #F20024;
   font-family: 'Lato-bold', sans-serif;
 }
 
 .imgWrapper > img {
-  flex: 0 0 88px;
-  height: 88px;
+  width: 12%;
+  max-width: 90px;
+  height: 12%;
+  max-height: 90px;
+  margin-right: 5px
+}
+@media all and (max-width:1000px) {
+  .headerE {
+    height: 90px;
+  }
+
+  .imgWrapper {
+    flex: 3 2;
+  }
+
+  .headerE span{
+    flex: 2 1;
+  }
+
+  .headerE span h1{
+    font-size: 35px;
+  }
+}
+
+@media all and (max-width:500px) {
+  .headerE {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+  }
+  .headerE span {
+    display:flex;
+    flex: 2;
+    align-items:center;
+  }
+
+  .headerE span h1 {
+    font-size: 40px;
+    font-family: 'Lato-bold', sans-serif;
+  }
+
+  .imgWrapper {
+    flex: 1.5;
+    justify-content: center;
+  }
 }
 /*END HEADER STYLING*/
 /*------------------------------------------*/
 
 /*BACKGROUNDTOP STYLING*/
-.backgroundWrap {
-  /*max-height: 653px;*/
-  /*height:100%;*/
-  background-color: yellow;
-  border: 1px solid red;
-}
 
 .backgroundTopImage {
   justify-content: center;
-  display:flex;
+  align-items: center;
+  display: flex;
   text-align: center;
   background: url(../img/cathedral-lima-peru.png) center no-repeat;
-  flex:1 1 1244px;
+  background-size: cover;
 }
 
+.backgroundTopImage > h1 {
+  font-size: 90px;
+  color: white;
+  font-family: 'Lato-bold', sans-serif;
+}
 
-.backgroundTopImage h1 {
+.backDescription .limaColor {
+  color: #F20024;
+}
 
+@media all and (max-width:1000px) {
+  .backgroundTopImage > h1 {
+    font-size: 60px;
+  }
+}
+
+@media all and (max-width:500px) {
+  .backgroundTopImage > h1 {
+    font-size: 30px;
+  }
 }
 
 /*END BACKGROUND TOP STYLING*/

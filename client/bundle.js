@@ -33,12 +33,17 @@ var backgroundTop = (function (_React$Component) {
         { className: 'backgroundTopImage' },
         _react2['default'].createElement(
           'h1',
-          null,
+          { className: 'backDescription' },
           'IMAGINE THAT YOU',
           _react2['default'].createElement('br', null),
           ' COULD MAKE THE BEST',
           _react2['default'].createElement('br', null),
-          ' LIMA’S FOOD IN YOUR',
+          _react2['default'].createElement(
+            'span',
+            { className: 'limaColor' },
+            'LIMA’S '
+          ),
+          ' FOOD IN YOUR',
           _react2['default'].createElement('br', null),
           ' KITCHEN'
         )
