@@ -38,7 +38,8 @@ class VideoReproduction extends React.Component{
               <div className='steps'>
                 <h1>1. Preparing the French Fries</h1>
                 <h1 className='stepNumber2'>2. Cutting the welsh onion</h1>
-                <h1>3. Cutting and seasoning the beef</h1>
+                <img src='../../img/videoToReproduce.png'/>
+                <h1 className='stepNumber3'>3. Cutting and seasoning the beef</h1>
                 <h1>4. Mixing all the ingredients</h1>
                 <h1>5. Serving the food</h1>
               </div>
