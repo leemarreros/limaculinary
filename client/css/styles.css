@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items:center;
-  /*justify-content:flex-start;*/
 }
 
 .headerWrap  {
@@ -27,7 +26,6 @@
 }
 
 .phoneScreensWrap {
-  /*display: flex;*/
   max-width: 1244px;
   width: 100%;
 }
@@ -157,8 +155,10 @@
 }
 
 .descriptionIdea h1 {
+  /*flex:1;*/
   font-family: 'Lato', sans-serif;
   font-size: 85px;
+  line-height: 130%;
   color: white;
   letter-spacing: 2px;
   padding: 0.5%;
@@ -166,6 +166,7 @@
 
 @media all and (max-width:1000px) {
   .descriptionIdea h1 {
+    line-height: 150%;
     font-size: 60px;
   }
 }
@@ -210,6 +211,8 @@
 .LoginScreen {
   background: url(../img/loginScreenBackground.png) center no-repeat;
   background-size: contain;
+  width: 375px;
+  height: 667px;
 }
 
 .LoginScreen .limaC {
@@ -224,9 +227,8 @@
   height: 106px;
 }
 
-
 .learnDescription {
-  flex: 1 0 100%;
+  flex: 1 0;
   text-align: center;
   width: 160px;
   height: 112px;
@@ -242,7 +244,6 @@
 }
 
 .freeTrialButton, .signInButton {
-  flex:1 0 0;
   width: 337px;
   height: 50px;
   border: 1px solid white;
@@ -276,18 +277,18 @@
   color: white;
 }
 
-.mainScreen{
+.mainScreen, .videoReproduction{
   flex: 1 0 auto;
   display: flex;
   align-items:center;
   justify-content:center;
 }
 
-.mainScreen > * {
+.mainScreen > *, .videoReproduction  > *{
   font-family: 'Lato', sans-serif;
 }
 
-.mainScreen .header {
+.mainScreen .header, .videoReproduction .header{
   flex:0 0 auto;
   width: 100%;
   height: 118px;
@@ -298,34 +299,34 @@
   justify-content:center;
 }
 
-.header img {
+.mainScreen .header img, .videoReproduction .header img {
   flex: 3;
   width: 24px;
   height: 27px;
 }
 
-.header .limaC{
+.mainScreen .header .limaC, .videoReproduction .header .limaC{
   flex:1 0 auto;
   font-size: 25px;
   color:white;
   padding: 2% 0 0 0px;
   margin: 0px;
 }
-.header .videos{
+.mainScreen .header .videos, .videoReproduction .header .videos{
   flex:1;
   font-size: 15px;
   color:white;
   padding: 0 0 2% 0;
 }
 
- .contentWrapper {
+ .contentWrapper, .bodyWrapper {
   flex:1 0 0;
   width: 375px;
   height: 549px;
   overflow:hidden;
 }
 
-.contentWrapper .content {
+.contentWrapper .content, .bodyWrapper .contentBody {
   width: 390px;
   height: 549px;
   margin-left: 4.5%;
@@ -333,13 +334,15 @@
   margin-top: 3%;
 }
 
+.bodyWrapper .contentBody {
+  margin-left: 0%;
+}
+
 .contentWrapper .content .items {
   display: flex;
   width: 339px;
   height: 254px;
-  /*border: 1px solid green;*/
   text-align: right;
-  /*background-color: yellow;*/
   flex-direction:column;
   align-items:flex-start;
   justify-content:center;
@@ -347,7 +350,6 @@
 }
 .infoWrapper {
   display: flex;
-  /*flex:1;*/
   width: 100%;
   align-items: flex-end;
   justify-content:flex-start;
@@ -372,7 +374,6 @@
 }
 
  .plusDish, .heartDish {
-  /*flex:0.5 1 0;*/
   width: 22px;
   height: 22px;
   margin: 0 9px 4px 0px;
@@ -385,8 +386,112 @@
 }
 
 
-.VideoReproduction {
+.videoReproduction {
+  justify-content:flex-start;
+}
+
+.bodyWrapper {
 
 }
+
+.bodyWrapper .videoProgress {
+  display: flex;
+  align-items:space-between;
+  justify-content:flex-start;
+}
+.progressWrapper {
+  height: 450px;
+  width: 25px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  margin: 1.5% 8% 0px 2%;
+}
+.progressWrapper img {
+}
+
+.videoProgress .steps {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin:3.5% 0px 0px 0px;
+  /*justify-content: flex-start;*/
+}
+
+.videoProgress .steps h1{
+  margin:0px 0px 9% 0px;
+  font-size: 18px;
+}
+
+.videoProgress .stepNumber2{
+  padding-bottom: 87%;
+}
+
+.commentsWrapper .itemComment {
+  width: 375px;
+  height: 144px;
+  background-color: black;
+}
+
+.itemComment {
+  display:flex;
+}
+
+.itemComment .contentComment {
+  flex: 2;
+}
+
+.itemComment .pictureContrib {
+  display: flex;
+  align-items:center;
+  justify-content:flex-end;
+  margin-right: 10px;
+}
+
+.itemComment .pictureContrib img{
+  width: 119px;
+  height: 80px;
+}
+
+.contentComment{
+  display:flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contentComment h1 {
+  flex:3;
+  font-size:15px;
+  color: white;
+  letter-spacing: 0.5px;
+  margin: 3% 10% 0px 6%;
+}
+
+.avatarAndComment {
+  display: flex;
+  flex:1;
+  justify-content:center;
+  align-items:center;
+  text-align: left;
+}
+
+.contentComment .avatarAndComment{
+  flex: 1;
+}
+
+.avatarAndComment img {
+  flex:1 1 -1px;
+  height:40px;
+  margin: 3% 0px 0px 3.5%;
+}
+
+.avatarAndComment h1{
+  flex: 1 10;
+  margin-left: 4%;
+  font-size:11px;
+  letter-spacing: 1px;
+  color: white;
+}
+
 /*END PHONE SCREENS*/
 /*------------------------------------------
