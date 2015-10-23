@@ -6,7 +6,77 @@ var content = [
   {
     nameDish: 'Pollo a la brasa',
     views: '3,324',
-    src: ''
+    src: '../../img/polloBrasaVideo.png'
+  },
+  {
+    nameDish: 'Ceviche Mixto',
+    views: '4,635',
+    src: '../../img/cevicheVideo.png'
+  },
+  {
+    nameDish: 'Lomo Saltado',
+    views: '6,834',
+    src: '../../img/lomoSaltadoVideo.png'
+  },
+  {
+    nameDish: 'Pollo a la brasa',
+    views: '3,324',
+    src: '../../img/polloBrasaVideo.png'
+  },
+  {
+    nameDish: 'Ceviche Mixto',
+    views: '4,635',
+    src: '../../img/cevicheVideo.png'
+  },
+  {
+    nameDish: 'Lomo Saltado',
+    views: '6,834',
+    src: '../../img/lomoSaltadoVideo.png'
+  },
+  {
+    nameDish: 'Pollo a la brasa',
+    views: '3,324',
+    src: '../../img/polloBrasaVideo.png'
+  },
+  {
+    nameDish: 'Ceviche Mixto',
+    views: '4,635',
+    src: '../../img/cevicheVideo.png'
+  },
+  {
+    nameDish: 'Lomo Saltado',
+    views: '6,834',
+    src: '../../img/lomoSaltadoVideo.png'
+  },
+  {
+    nameDish: 'Pollo a la brasa',
+    views: '3,324',
+    src: '../../img/polloBrasaVideo.png'
+  },
+  {
+    nameDish: 'Ceviche Mixto',
+    views: '4,635',
+    src: '../../img/cevicheVideo.png'
+  },
+  {
+    nameDish: 'Lomo Saltado',
+    views: '6,834',
+    src: '../../img/lomoSaltadoVideo.png'
+  },
+  {
+    nameDish: 'Pollo a la brasa',
+    views: '3,324',
+    src: '../../img/polloBrasaVideo.png'
+  },
+  {
+    nameDish: 'Ceviche Mixto',
+    views: '4,635',
+    src: '../../img/cevicheVideo.png'
+  },
+  {
+    nameDish: 'Lomo Saltado',
+    views: '6,834',
+    src: '../../img/lomoSaltadoVideo.png'
   }
 ];
 
@@ -25,9 +95,15 @@ class MainScreen extends React.Component{
           <img src='../../img/miniFireLogo.png'/>
           <h1 className='videos'>VIDEOS</h1>
         </div>
-        <div className='content'>
-          {for (var i=0;){}}
-          <div className='items'>
+        <div className='contentWrapper'>
+          <div className='content'>
+            {content.map(function(item, i){
+              return (
+                <div className='items' key={i}>
+                  <h1>{item.nameDish}</h1>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
