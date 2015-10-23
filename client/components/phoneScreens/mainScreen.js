@@ -17,66 +17,6 @@ var content = [
     nameDish: 'Lomo Saltado',
     views: '6,834',
     src: '../../img/lomoSaltadoVideo.png'
-  },
-  {
-    nameDish: 'Pollo a la brasa',
-    views: '3,324',
-    src: '../../img/polloBrasaVideo.png'
-  },
-  {
-    nameDish: 'Ceviche Mixto',
-    views: '4,635',
-    src: '../../img/cevicheVideo.png'
-  },
-  {
-    nameDish: 'Lomo Saltado',
-    views: '6,834',
-    src: '../../img/lomoSaltadoVideo.png'
-  },
-  {
-    nameDish: 'Pollo a la brasa',
-    views: '3,324',
-    src: '../../img/polloBrasaVideo.png'
-  },
-  {
-    nameDish: 'Ceviche Mixto',
-    views: '4,635',
-    src: '../../img/cevicheVideo.png'
-  },
-  {
-    nameDish: 'Lomo Saltado',
-    views: '6,834',
-    src: '../../img/lomoSaltadoVideo.png'
-  },
-  {
-    nameDish: 'Pollo a la brasa',
-    views: '3,324',
-    src: '../../img/polloBrasaVideo.png'
-  },
-  {
-    nameDish: 'Ceviche Mixto',
-    views: '4,635',
-    src: '../../img/cevicheVideo.png'
-  },
-  {
-    nameDish: 'Lomo Saltado',
-    views: '6,834',
-    src: '../../img/lomoSaltadoVideo.png'
-  },
-  {
-    nameDish: 'Pollo a la brasa',
-    views: '3,324',
-    src: '../../img/polloBrasaVideo.png'
-  },
-  {
-    nameDish: 'Ceviche Mixto',
-    views: '4,635',
-    src: '../../img/cevicheVideo.png'
-  },
-  {
-    nameDish: 'Lomo Saltado',
-    views: '6,834',
-    src: '../../img/lomoSaltadoVideo.png'
   }
 ];
 
@@ -100,7 +40,13 @@ class MainScreen extends React.Component{
             {content.map(function(item, i){
               return (
                 <div className='items' key={i}>
-                  <h1>{item.nameDish}</h1>
+                  <div className='infoWrapper'>
+                    <h1 className='nameDish'>{item.nameDish}</h1>
+                    <h1 className='viewDish'>{item.views} views </h1>
+                    <img className='plusDish' src='../../img/Plus.png'/>
+                    <img className='heartDish' src='../../img/heartBitmap.png'/>
+                  </div>
+                  <img className='picDish' src={item.src}/>
                 </div>
               );
             })}

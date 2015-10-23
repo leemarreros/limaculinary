@@ -1,4 +1,9 @@
+./client/bundle.js
+/client/bundle.js
 client/bundle.js
+limaculinary/client/bundle.js
+./limaculinary/client/bundle.js
+/limaculinary/client/bundle.js
 # Logs
 logs
 *.log
