@@ -26,6 +26,12 @@
   background-color: #FF0026;
 }
 
+.phoneScreensWrap {
+  /*display: flex;*/
+  max-width: 1244px;
+  width: 100%;
+}
+
 /*END TOP WRAPPERS*/
 /*------------------------------------------*/
 
@@ -137,7 +143,7 @@
 
 @media all and (max-width:500px) {
   .backgroundTopImage > h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -173,3 +179,142 @@
 /*END OF DESCRIPTION BODY*/
 /*------------------------------------------
 
+/*PHONE SCREENS*/
+
+.phoneScreens {
+  margin: 1.1% 0 1.1% 0;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.phoneBoundaries {
+  margin: 1%;
+  display: flex;
+  width: 375px;
+  height: 667px;
+  border: 1px solid black;
+}
+
+.LoginScreen, .mainScreen, .videoReproduction {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.LoginScreen {
+  background: url(../img/loginScreenBackground.png) center no-repeat;
+  background-size: contain;
+}
+
+.LoginScreen .limaC {
+  /*flex: 1;*/
+  font-size: 50px;
+  font-family: 'Lato-bold', sans-serif;
+  color: white;
+}
+
+.LoginScreen img {
+  width: 90px;
+  height: 106px;
+}
+
+
+.learnDescription {
+  flex: 1 0 100%;
+  text-align: center;
+  width: 160px;
+  height: 112px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.LoginScreen .learnDescription h1 {
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  font-size: 23px;
+  color: white;
+}
+
+.freeTrialButton, .signInButton {
+  flex:1 0 0;
+  width: 337px;
+  height: 50px;
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  border-radius: 13px;
+  margin: 4px;
+}
+
+.freeTrialButton {
+  background-color: #FF0000;
+}
+
+.signInButton {
+  background-color: #000000;
+}
+
+.freeTrialButton h1,  .signInButton h1{
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.LoginScreen .termsC {
+  flex:0.5 0;
+  display: flex;
+  align-items:center;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  color: white;
+}
+
+.mainScreen > * {
+  font-family: 'Lato', sans-serif;
+}
+
+.mainScreen .header {
+  width: 100%;
+  height: 118px;
+  background-color: #FF0026;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+}
+
+.header img {
+  flex: 3;
+  width: 24px;
+  height: 27px;
+}
+
+.header .limaC{
+  flex:1 0 auto;
+  font-size: 25px;
+  color:white;
+  padding: 2% 0 0 0px;
+  margin: 0px;
+  /*text-align: center;*/
+  /*align-self:center;*/
+}
+
+.header .videos{
+  flex:1;
+  font-size: 15px;
+  color:white;
+  padding: 0 0 2% 0;
+}
+
+.VideoReproduction {
+
+}
+/*END PHONE SCREENS*/
+/*------------------------------------------
