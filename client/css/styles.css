@@ -1,4 +1,8 @@
 /*TOP WRAPPERS*/
+.headerWrap, .backgroundWrap, .descriptionWrap, .phoneScreensWrap, .subscribeSectionWrap, .quotesEntitiesWrapper {
+  max-width: 1244px;
+  width: 100%;
+}
 .globalWrapper {
   display: flex;
   flex-direction: column;
@@ -7,20 +11,14 @@
 
 .headerWrap  {
   display: flex;
-  max-width: 1244px;
-  width: 100%;
   justify-content: center;
 }
 
 .backgroundWrap {
-  max-width: 1244px;
   min-width: 375px;
-  width: 100%;
 }
 
 .descriptionWrap {
-  max-width: 1244px;
-  width: 100%;
   min-width: 375px;
   max-height: 561px;
   height: 100%;
@@ -28,17 +26,19 @@
 }
 
 .phoneScreensWrap {
-  max-width: 1244px;
-  width: 100%;
 }
 
 .subscribeSectionWrap {
-  max-width: 1244px;
-  width: 100%;
-  min-width: 375px;
+  min-height: 375px;
   background-color: #FF0026;
 }
 
+.quotesEntitiesWrapper {
+  min-height: 55vh;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
 /*END TOP WRAPPERS*/
 /*------------------------------------------*/
 
@@ -662,4 +662,55 @@
 }
 
 /*END OFSUBSCRIBE SECTION*/
-/*------------------------------------------
+/*------------------------------------------*/
+
+/*QUOTES*/
+
+.quotesEntities {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+.sponsor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+}
+.sponsor img{
+  width: 70%;
+}
+
+.sponsor h1{
+  text-align: center;
+  font-family: 'Lato-bold', sans-serif;
+  font-size: 40px;
+  color: #FF0026
+}
+
+@media all and (max-width:1000px) {
+  .sponsor h1{
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width:750px) {
+  .sponsor h1{
+    font-size: 25px;
+  }
+}
+
+@media all and (max-width:500px) {
+  .quotesEntities {
+    flex-direction: column;
+  }
+  .sponsor h1{
+    font-size: 30px;
+  }
+  .sponsor img{
+    width: 80%;
+  }
+}
+/*END OF QUOTES*/
+/*------------------------------------------*/
