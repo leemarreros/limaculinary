@@ -6,6 +6,7 @@
   "dependencies": {
     "babelify": "^6.3.0",
     "browser-sync": "^2.9.11",
+    "firebase": "^2.3.1",
     "grunt": "^0.4.5",
     "react": "^0.14.0-rc1",
     "react-dom": "^0.14.0-rc1",

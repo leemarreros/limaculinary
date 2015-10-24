@@ -1,6 +1,10 @@
 'use strict';
 
 import React from 'react';
+import Firebase from 'firebase';
+var ref = new Firebase("XXXXXXXXX");
+var userEmail = ref.child("emails");
+// var newUserEmail = userEmail.push();
 
 var ENTER_KEY_CODE = 13;
 
@@ -22,11 +26,19 @@ class SubscribeSection extends React.Component{
       var text = this.state.text.trim();
       if (text) {
         console.log('Subscribed as: ', text);
+        userEmail.push(text);
       }
       this.setState({text: ''});
     }
   }
 
+  _subscribeButton(){
+    if (this.state.text) {
+        console.log('Subscribed as: ', this.state.text);
+        userEmail.push(this.state.text);
+      }
+    this.setState({text: ''});
+  }
 
   render() {
     return (
@@ -43,8 +55,8 @@ class SubscribeSection extends React.Component{
                 onChange={this._onChange.bind(this)}
                 onKeyDown={this._onKeyDown.bind(this)}/>
             </div>
-            <div className='buttonSubscribe'>
-              <h1>Subscribe me!</h1>
+            <div className='buttonSubscribe' onClick={this._subscribeButton.bind(this)}>
+              <h1 >Subscribe me!</h1>
             </div>
           </div>
         </div>
