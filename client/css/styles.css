@@ -583,6 +583,10 @@
   flex: 1.5;
 }
 
+.subscribeInput .buttonSubscribe:active {
+  background-color: #6A6E76;
+}
+
 .subscribeInput .buttonSubscribe h1{
   font-family: 'Lato-bold', sans-serif;
   font-size: 28px;
