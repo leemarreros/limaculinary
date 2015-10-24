@@ -32,6 +32,13 @@
   width: 100%;
 }
 
+.subscribeSectionWrap {
+  max-width: 1244px;
+  width: 100%;
+  min-width: 375px;
+  background-color: #FF0026;
+}
+
 /*END TOP WRAPPERS*/
 /*------------------------------------------*/
 
@@ -513,4 +520,146 @@
 }
 
 /*END PHONE SCREENS*/
+/*------------------------------------------
+
+
+/*SUBSCRIBE SECTION*/
+
+.descriptionIdea {
+  width: 100%;
+  /*height: 40%;*/
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.descriptionIdea .wrapperDescription {
+  flex:4;
+  display: flex;
+}
+
+.descriptionIdea .wrapperSubscribeInput {
+  flex:4;
+  display: flex;
+  width: 100%;
+  align-items:center;
+  justify-content:center;
+  /*border-color: green;
+  border-width: 9px;
+  border-radius:4px;*/
+  margin-bottom: 5%;
+}
+
+.subscribeInput {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  width: 85%;
+  background-color: black;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.textAreaWrapper {
+  border: 5px solid black;
+  flex:4;
+  height: 70px;
+  overflow: hidden;
+  justify-content:center;
+}
+
+.subscribeInput .textAreaWrapper .emailComposer {
+  text-align:center;
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+}
+
+
+.subscribeInput .buttonSubscribe {
+  background-color: black;
+  flex: 1.5;
+}
+
+.subscribeInput .buttonSubscribe h1{
+  font-family: 'Lato-bold', sans-serif;
+  font-size: 28px;
+  color:white;
+}
+
+@media all and (max-width:1000px) {
+  .textAreaWrapper {
+    height: 60px;
+  }
+
+  .subscribeInput {
+    width: 100%;
+  }
+
+  .subscribeInput {
+    border: 2px solid black;
+  }
+
+  .subscribeInput .buttonSubscribe h1{
+    font-size: 22px;
+  }
+}
+
+@media all and (max-width:750px) {
+  .textAreaWrapper {
+    height: 50px;
+  }
+
+  .subscribeInput {
+    width: 100%;
+  }
+  .subscribeInput .buttonSubscribe {
+    flex: 2;
+  }
+
+  .subscribeInput .buttonSubscribe h1{
+    font-size: 18px;
+  }
+
+  .subscribeInput .textAreaWrapper .emailComposer {
+    font-size: 20px;
+  }
+}
+@media all and (max-width:500px) {
+  .subscribeInput {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+    height: 102px;
+  }
+
+  .textAreaWrapper {
+    border: 2px solid black;
+    display: flex;
+    flex:2;
+    width: 100%;
+    height: 50px;
+  }
+  .subscribeInput .textAreaWrapper .emailComposer {
+    font-size: 22px;
+  }
+  .subscribeInput .buttonSubscribe {
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    /*border: 1px solid black;*/
+  }
+
+  .subscribeInput .buttonSubscribe h1{
+    color:white;
+    font-size: 27px;
+    text-align: center;
+  }
+}
+
+/*END OFSUBSCRIBE SECTION*/
 /*------------------------------------------
