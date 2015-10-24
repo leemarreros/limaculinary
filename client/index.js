@@ -7,6 +7,7 @@ import BackgroundTop from './components/backgroundTop';
 import DescriptionBody from './components/descriptionBody';
 import PhoneScreens from './components/phoneScreens';
 import SubscribeSection from './components/subscribeSection';
+import QuotesEntities from './components/quotesEntities';
 
 class LimaCulinary extends React.Component{
   constructor(props) {
@@ -31,6 +32,9 @@ class LimaCulinary extends React.Component{
         </div>
         <div className='subscribeSectionWrap'>
           <SubscribeSection/>
+        </div>
+        <div className='quotesEntitiesWrapper'>
+          <QuotesEntities/>
         </div>
       </div>
       );
