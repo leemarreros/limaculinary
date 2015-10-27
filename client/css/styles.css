@@ -1,6 +1,6 @@
 /*TOP WRAPPERS*/
 .headerWrap, .backgroundWrap, .descriptionWrap, .phoneScreensWrap, .subscribeSectionWrap, .quotesEntitiesWrapper {
-  max-width: 1244px;
+  max-width: 1100px;
   width: 100%;
 }
 .globalWrapper {
@@ -47,7 +47,7 @@
   display: flex;
   width: 100%;
   min-width: 373px;
-  max-width: 1244px;
+  max-width: 1100px;
   height: 110px;
   justify-content: space-between;
   align-items:center;
@@ -57,16 +57,16 @@
 .imgWrapper {
   flex: 2 3;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .headerE span {
-  flex: 1 1;
+  flex: 2 1;
 }
 
 .headerE span h1 {
   text-align:center;
-  font-size: 50px;
+  font-size: 60px;
   color: #F20024;
   font-family: 'Lato-bold', sans-serif;
 }
@@ -76,7 +76,7 @@
   max-width: 90px;
   height: 12%;
   max-height: 90px;
-  margin-right: 5px
+  margin-right: 18px
 }
 @media all and (max-width:1000px) {
   .headerE {
@@ -92,14 +92,34 @@
   }
 
   .headerE span h1{
-    font-size: 35px;
+    font-size: 41px;
+  }
+}
+
+@media all and (max-width:750px) {
+  .headerE {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    border: 1px solid red;
+  }
+  .headerE span {
+    display:flex;
+    flex: 2;
+    align-items:center;
+  }
+  .headerE span h1 {
+    font-size: 47px;
+  }
+  .imgWrapper {
+    flex:2;
+    align-items:center;
+    justify-content: center;
   }
 }
 
 @media all and (max-width:500px) {
   .headerE {
-    display: flex;
-    flex-direction: column;
     height: 130px;
   }
   .headerE span {
@@ -110,12 +130,16 @@
 
   .headerE span h1 {
     font-size: 40px;
-    font-family: 'Lato-bold', sans-serif;
   }
 
   .imgWrapper {
-    flex: 1.5;
-    justify-content: center;
+    flex: 2;
+    align-items:center;
+    justify-content: space-around;
+  }
+
+  .imgWrapper > img {
+    margin-right: 0px;
   }
 }
 /*END HEADER STYLING*/
@@ -133,7 +157,8 @@
 }
 
 .backgroundTopImage > h1 {
-  font-size: 90px;
+  font-size: 80px;
+  line-height: 150%;
   color: white;
   font-family: 'Lato-bold', sans-serif;
   letter-spacing: 4px;
@@ -165,10 +190,9 @@
 }
 
 .descriptionIdea h1 {
-  /*flex:1;*/
   font-family: 'Lato', sans-serif;
-  font-size: 85px;
-  line-height: 130%;
+  font-size: 75px;
+  line-height: 200%;
   color: white;
   letter-spacing: 2px;
   padding: 0.5%;
@@ -545,9 +569,6 @@
   width: 100%;
   align-items:center;
   justify-content:center;
-  /*border-color: green;
-  border-width: 9px;
-  border-radius:4px;*/
   margin-bottom: 5%;
 }
 
@@ -567,6 +588,14 @@
   height: 70px;
   overflow: hidden;
   justify-content:center;
+}
+
+#valid {
+  border: 5px solid #29D56B;
+}
+
+#notValid {
+  border: 5px solid #FE2837;
 }
 
 .subscribeInput .textAreaWrapper .emailComposer {
@@ -593,6 +622,122 @@
   color:white;
 }
 
+/*Modal thank you!*/
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 15;
+}
+.closePopUpWindow {
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 13;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+.modalWrapper .modalContent {
+  z-index: 20;
+  background-color: white;
+  position: relative;
+  width: 400px;
+  margin: 10% auto;
+  padding: 5px 20px 20px 20px;
+  border-radius: 10px;
+  pointer-events: auto;
+  box-shadow: 4px 4px 5px black;
+  display: flex;
+  flex-direction:column;
+  align-items:flex-end;
+
+}
+
+.modalInfoWrong {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+
+.modalWrapper .modalContent .modalInfoWrong {
+  border: 1px solid black;
+}
+
+.modalInfoWrong .wrapperEmail .validEmail{
+  color:black;
+}
+
+.modalInfoWrong .wrapperEmail h1 {
+  font-family: 'Lato-bold', sans-serif;
+  color: #FF0026;
+  font-size: 60px;
+}
+
+.modalInfoWrong .buttonTryAgain{
+  width: 100%;
+  background-color: black;
+}
+
+.buttonTryAgain:active {
+  background-color: #6A6E76;
+}
+
+.buttonTryAgain h1{
+  height: 100%;
+  font-family: 'Lato-bold', sans-serif;
+  font-size: 26px;
+  color:white;
+}
+
+/*Exit button*/
+.modalWrapper .modalContent .exitButton {
+  width: 29px;
+  text-align: center;
+  font-family: 'Lato-bold', sans-serif;
+  margin: 0px;
+}
+.exitButton:hover {
+  background-color: black;
+  border-radius: 15px;
+  color:white;
+}
+
+@media all and (max-width:1000px) {
+  .modalWrapper .modalContent {
+    width: 350px;
+  }
+  .modalInfoWrong .wrapperEmail h1 {
+    font-size: 55px;
+  }
+  .buttonTryAgain h1{
+    font-size: 23px;
+  }
+}
+
+@media all and (max-width:750px) {
+   .modalWrapper .modalContent {
+    width: 300px;
+  }
+  .modalInfoWrong .wrapperEmail h1 {
+    font-size: 45px;
+  }
+  .buttonTryAgain h1{
+    font-size: 23px;
+  }
+}
+
+@media all and (max-width:500px) {
+
+}
+
+/*END OF MODAL*/
+/*----------------------------------*/
 @media all and (max-width:1000px) {
   .textAreaWrapper {
     height: 60px;
@@ -660,8 +805,15 @@
 
   .subscribeInput .buttonSubscribe h1{
     color:white;
-    font-size: 27px;
+    font-size: 25px;
     text-align: center;
+  }
+  #valid {
+    border: 2px solid #29D56B;
+  }
+
+  #notValid {
+    border: 2px solid #FE2837;
   }
 }
 
