@@ -1,6 +1,6 @@
 /*TOP WRAPPERS*/
 .headerWrap, .backgroundWrap, .descriptionWrap, .phoneScreensWrap, .subscribeSectionWrap, .quotesEntitiesWrapper {
-  max-width: 1244px;
+  max-width: 1100px;
   width: 100%;
 }
 .globalWrapper {
@@ -47,7 +47,7 @@
   display: flex;
   width: 100%;
   min-width: 373px;
-  max-width: 1244px;
+  max-width: 1100px;
   height: 110px;
   justify-content: space-between;
   align-items:center;
@@ -57,16 +57,16 @@
 .imgWrapper {
   flex: 2 3;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .headerE span {
-  flex: 1 1;
+  flex: 2 1;
 }
 
 .headerE span h1 {
   text-align:center;
-  font-size: 50px;
+  font-size: 60px;
   color: #F20024;
   font-family: 'Lato-bold', sans-serif;
 }
@@ -76,7 +76,7 @@
   max-width: 90px;
   height: 12%;
   max-height: 90px;
-  margin-right: 5px
+  margin-right: 18px
 }
 @media all and (max-width:1000px) {
   .headerE {
@@ -92,14 +92,34 @@
   }
 
   .headerE span h1{
-    font-size: 35px;
+    font-size: 41px;
+  }
+}
+
+@media all and (max-width:750px) {
+  .headerE {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    border: 1px solid red;
+  }
+  .headerE span {
+    display:flex;
+    flex: 2;
+    align-items:center;
+  }
+  .headerE span h1 {
+    font-size: 47px;
+  }
+  .imgWrapper {
+    flex:2;
+    align-items:center;
+    justify-content: center;
   }
 }
 
 @media all and (max-width:500px) {
   .headerE {
-    display: flex;
-    flex-direction: column;
     height: 130px;
   }
   .headerE span {
@@ -110,12 +130,16 @@
 
   .headerE span h1 {
     font-size: 40px;
-    font-family: 'Lato-bold', sans-serif;
   }
 
   .imgWrapper {
-    flex: 1.5;
-    justify-content: center;
+    flex: 2;
+    align-items:center;
+    justify-content: space-around;
+  }
+
+  .imgWrapper > img {
+    margin-right: 0px;
   }
 }
 /*END HEADER STYLING*/
@@ -133,7 +157,8 @@
 }
 
 .backgroundTopImage > h1 {
-  font-size: 90px;
+  font-size: 80px;
+  line-height: 150%;
   color: white;
   font-family: 'Lato-bold', sans-serif;
   letter-spacing: 4px;
@@ -165,10 +190,9 @@
 }
 
 .descriptionIdea h1 {
-  /*flex:1;*/
   font-family: 'Lato', sans-serif;
-  font-size: 85px;
-  line-height: 130%;
+  font-size: 75px;
+  line-height: 200%;
   color: white;
   letter-spacing: 2px;
   padding: 0.5%;
@@ -545,9 +569,6 @@
   width: 100%;
   align-items:center;
   justify-content:center;
-  /*border-color: green;
-  border-width: 9px;
-  border-radius:4px;*/
   margin-bottom: 5%;
 }
 

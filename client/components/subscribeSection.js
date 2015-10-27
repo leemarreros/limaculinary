@@ -71,7 +71,7 @@ class SubscribeSection extends React.Component{
                               <div className='wrapperEmail'>
                                 {this.state.validateEmail ?
                                   <h1 className='validEmail'>Thank you! See you soon!</h1>:
-                                  <h1>Email not valid</h1>}
+                                  <h1>Email not valid!</h1>}
                               </div>
                               <div onClick={this.state.validateEmail ? this._closePage.bind(this) : this._closingModal.bind(this)} className='buttonTryAgain'>
                                 {this.state.validateEmail ?
