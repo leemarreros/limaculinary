@@ -1,6 +1,6 @@
 {
   "firebase": "lima-culinary",
-  "public": "client",
+  "public": "app",
   "ignore": [
     "firebase.json",
     "**/.*",
